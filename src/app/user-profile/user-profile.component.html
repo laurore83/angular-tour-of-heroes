@@ -1,0 +1,10 @@
+<img [src]="img" [alt]="firstName" />
+<div class="container">
+  <!-- si hidden est true <p> s'affiche sinon il est masqué par la fonction hidden -->
+  <p>LastName : {{ lastName }}</p>
+  <p>FirstName : {{ firstName }}</p>
+  <p>{{ quote }}</p>
+  <input type="text" [(ngModel)]="quote" />
+  <p class="age" [hidden]="visible">{{ age }}</p>
+</div>
+<button (click)="hidden()" id="button">show/hidde my name</button>
